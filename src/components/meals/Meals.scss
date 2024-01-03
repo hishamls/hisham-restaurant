@@ -1,0 +1,51 @@
+
+
+#meals {
+	width: 90%;
+	max-width: 70rem;
+	list-style: none;
+	margin: 2rem auto;
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 1rem;
+}
+.meal-item {
+	background-color: $background-color_1;
+	border-radius: 1rem;
+	overflow: hidden;
+	text-align: center;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+	article {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	img {
+		width: 100%;
+		height: 20rem;
+		object-fit: cover;
+	}
+	h3 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin: 0.75rem 0;
+	}
+}
+.meal-item-description {
+	margin: 1rem;
+}
+.meal-item-price {
+	display: inline-block;
+	background-color: $background-color_2;
+	color: $color_1;
+	font-size: 0.9rem;
+	font-weight: bold;
+	padding: 0.5rem 2rem;
+	margin: 0;
+	border-radius: 4px;
+}
+.meal-item-actions {
+	margin-bottom: 1.5rem;
+}
