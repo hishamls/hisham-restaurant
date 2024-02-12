@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./Meals.css";
 import MealItem from "../meal-item/MealItem.jsx";
 import useHttp from "../../hooks/useHttp.js";
